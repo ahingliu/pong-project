@@ -84,3 +84,13 @@ h1 {
   margin-bottom: 1rem; 
   text-align: center;
 }
+
+.players {
+	display: flex;
+	justify-content: space-between;
+}
+
+.player2 {
+	justify-content: flex-end;
+}
+

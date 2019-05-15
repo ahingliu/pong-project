@@ -3,7 +3,7 @@ import audioFile from '../../public/sounds/pong-01.wav';
 import audioFile2 from '../../public/sounds/toasty.mp3';
 import audioFile3 from '../../public/sounds/goal.wav';
 
-export default class Ball {
+export default class Ball1 {
     constructor(boardWidth, boardHeight, radius) {
         this.boardWidth = boardWidth;
         this.boardHeight = boardHeight;
@@ -84,10 +84,10 @@ paddleCollision(player1, player2) {
 
     render(svg, player1, player2) {
         let circle = document.createElementNS(SVG_NS, 'circle');
-        circle.setAttributeNS(null, "fill", "red");
+        circle.setAttributeNS(null, "fill", "purple");
         circle.setAttributeNS(null, "cx", this.x);
         circle.setAttributeNS(null, "cy", this.y);
-        circle.setAttributeNS(null, "r", this.radius*3);
+        circle.setAttributeNS(null, "r", this.radius);
         this.x = this.x + this.vx;
         this.y = this.y + this.vy;
         this.wallCollision();
